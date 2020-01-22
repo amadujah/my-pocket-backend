@@ -26,6 +26,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "nodemon": "^2.0.2",
-    "set-value": ">=2.0.1"
+    "set-value": ">=2.0.1",
+    "braces": ">=2.3.1"
   }
 }
