@@ -1,7 +1,9 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 //recipe routes
-import recipe from './api/recipes/recipe.route'
+import recipe from './api/recipes/recipe.route';
+import spending from './api/recipes/spending.route'
+
 
 const app = express()
 // Set up mongoose connection
@@ -18,7 +20,9 @@ const port = 9000
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.use('/recipes', recipe)
+app.use('/recipes', recipe);
+app.use('/spending', spending);
+
 app.listen(port, () => {
     console.log(`App is running on port ${port}`)
 })
